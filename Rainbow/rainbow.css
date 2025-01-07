@@ -1,0 +1,92 @@
+/* *********** */
+/*  SOLUTION 1 */
+/* *********** */
+
+div {
+  border-radius: 50%;
+}
+
+#outer {
+  height: 200px;
+  width: 200px;
+  padding: 25px;
+  background-color: #ffa500;
+  border: 25px solid #f00;
+}
+
+#middle {
+  height: 100px;
+  width: 100px;
+  padding: 25px;
+  background-color: #008000;
+  border: 25px solid #ff0;
+}
+
+#inner {
+  height: 50px;
+  width: 50px;
+  background-color: #800080;
+  border: 25px solid #00f;
+}
+
+/* *********** */
+/*  SOLUTION 2 */
+/* *********** */
+
+/* :root {
+  --circle-thickness: 25px;
+}
+
+div {
+  border-radius: 50%;
+}
+
+#outer {
+  --outer-circle-size: calc(var(--circle-thickness) * 8);
+
+  height: var(--outer-circle-size);
+  width: var(--outer-circle-size);
+  padding: var(--circle-thickness);
+  background-color: #ffa500;
+  border: var(--circle-thickness) solid #f00;
+}
+
+#middle {
+  --middle-circle-size: calc(var(--circle-thickness) * 4);
+
+  height: var(--middle-circle-size);
+  width: var(--middle-circle-size);
+  padding: var(--circle-thickness);
+  background-color: #008000;
+  border: var(--circle-thickness) solid #ff0;
+}
+
+#inner {
+  --inner-circle-size: calc(var(--circle-thickness) * 2);
+  height: var(--inner-circle-size);
+  width: var(--inner-circle-size);
+  background-color: #800080;
+  border: var(--circle-thickness) solid #00f;
+} */
+
+/* *********** */
+/*  SOLUTION 3 */
+/* *********** */
+
+/* #inner {
+  --circle-thickness: 25px;
+
+  height: calc(var(--circle-thickness) * 2);
+  width: calc(var(--circle-thickness) * 2);
+  background-color: #800080;
+  border-radius: 50%;
+  box-shadow: 0 0 0 var(--circle-thickness) #0000ff,
+    0 0 0 calc(var(--circle-thickness) * 2) #008000,
+    0 0 0 calc(var(--circle-thickness) * 3) #ffff00,
+    0 0 0 calc(var(--circle-thickness) * 4) #ffa500,
+    0 0 0 calc(var(--circle-thickness) * 5) #ff0000;
+
+  position: relative;
+  top: calc(var(--circle-thickness) * 5);
+  left: calc(var(--circle-thickness) * 5);
+} */
