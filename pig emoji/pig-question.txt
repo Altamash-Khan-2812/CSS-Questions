@@ -1,3 +1,5 @@
+You're given an HTML file with the markup for a pig emoji.
+
 Using only CSS, style the HTML to have the appearance of a pig emoji with the following characteristics:
 
 
@@ -15,3 +17,27 @@ The nose should have a width of 100px and a height of 60px. It should be horizon
 The nose contains two nostrils, each with a height that's 50% of the height of the nose and a width that's 25% of the width of the nose. The nostrils should be vertically centered with horizontal space around them (twice as much space between them as from the edge of the nose). Additionally, they should have a border radius of 50% and a background color of black .
 
 The head and both ears should each have a solid, black , 5px border, while the nose and both eyes should each have a solid black , 2px border.
+
+
+
+
+
+
+HINTS
+
+Hint 1
+Try breaking the problem into small pieces and thinking about the individual shapes needed. Starting with the head and then moving down the DOM tree is likely the easiest approach.
+
+
+
+Hint 2
+When an element is set to position: absolute, it will be positioned relative to its nearest positioned ancestor (e.g. a parent with position: relative). Can you use this to position the various elements based on the position of the head?
+
+Hint 3
+A border-radius of 50% will create a perfect circle when an element has the same width and height
+
+Hint 4
+The :first-child and :nth-child() pseudo-classes can be used to select specific children numbers. For example .foo:first-child will select elements with the class foo that are the first child of their parent.
+
+Hint 5
+Centering an element with position absolute can be tricky, but the easiest way will be to give it left: 50%, which moves the left edge of the element 50% of the way over. This can then be combined with transform: translateX(-50%) to account for the width of the element itself.
