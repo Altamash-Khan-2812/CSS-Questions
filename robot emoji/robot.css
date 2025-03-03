@@ -37,17 +37,14 @@
   width: 10px;
   height: 50px;
   background-color: #c90a0a;
+  position: absolute;
+  transform: translate(100%, 100%);
 }
 
 .ears {
   display: flex;
   justify-content: space-between;
   position: relative;
-}
-
-.ear {
-  position: absolute;
-  transform: translate(100%, 100%);
 }
 
 .ear:first-of-type {
@@ -65,7 +62,8 @@
 
 .eyes {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
   margin-top: 25px;
 }
 
@@ -80,8 +78,11 @@
 .nose {
   width: 0;
   height: 0;
-  margin: auto;
   border-left: 15px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-right: 15px solid transparent;
   border-bottom: 30px solid #c90a0a;
 }
